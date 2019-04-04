@@ -47,12 +47,13 @@ public class MainActivity extends AppCompatActivity {
                         .from(MainActivity.this)
                         .inflate(R.layout.list_kota, null, false);
 
-                RecyclerView recyclerView = sheetView.findViewById(R.id.rec_kota);
 
                 RecAdapter adapter = new RecAdapter(listKota, listImage);
 
-                recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
-                recyclerView.setAdapter(adapter);
+                RecyclerView recKota = sheetView.findViewById(R.id.rec_kota);
+                recKota.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+                recKota.setAdapter(adapter);
+
 
                 bottomSheetDialog.setContentView(sheetView);
                 bottomSheetDialog.show();
