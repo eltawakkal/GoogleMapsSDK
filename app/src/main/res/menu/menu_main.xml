@@ -17,13 +17,13 @@
 
             <item
                 android:id="@+id/action_terrain"
-                android:title="Normal"
+                android:title="Terrain"
                 android:icon="@drawable/ic_terrain_black_24dp"
                 app:showAsAction="ifRoom"/>
 
             <item
                 android:id="@+id/action_satellite"
-                android:title="Normal"
+                android:title="Satellite"
                 android:icon="@drawable/ic_satellite_black_24dp"
                 app:showAsAction="ifRoom"/>
 
